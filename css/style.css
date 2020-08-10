@@ -3,6 +3,9 @@ body{
     font-family: 'Lato', sans-serif;
     --my-default-theme-color:#348795;
     --my-default-theme-color-revert: white;
+    --my-level-good: #009933;
+    --my-level-medium: #cc8500c2;
+    --my-level-low: #ff9933;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -41,7 +44,7 @@ section .heading h2{
 }
 
 .default-theme-revert-divider{
-    background: white;
+    background:var(--my-default-theme-color-revert)
 }
 
 li{
@@ -125,7 +128,7 @@ li{
     display: inline-block;
 }
 .button1:hover{
-    background: white;
+    background:var(--my-default-theme-color-revert);
     color:#348795;
     text-decoration: none;
 }
@@ -133,7 +136,7 @@ li{
 /* Skills */
 
 #skills{
-    background: var(--my-default-theme-color-revert)
+    background: var(--my-default-theme-color-revert);
 }
 
 #skills .heading h2{
@@ -170,7 +173,7 @@ li{
 }
 
 #background .heading h2{
-    color: white;
+    color: var(--my-default-theme-color-revert)
 }
 
 .timeline{
@@ -280,7 +283,7 @@ li{
 /* Education */
 
 #education{
-    background: white;
+    background:var(--my-default-theme-;color-revert)
 }
 
 #education .heading h2{
@@ -336,19 +339,17 @@ li{
 }
 
 #portfolio .heading h2{
-    color: white;
+    color: var(--my-default-theme-color-revert)
 }
 
-#portfolio .my-style img:after{
+/* #portfolio .my-style img:after{
     background: var(--my-default-theme-color);
     width: 40px;
     height: 10px;
     font-size: 6px;
     color: grey;
     content: "Udemy";
-        
-
-}
+} */
 
 #portfolio .my-style img{
     position: relative;
@@ -379,6 +380,39 @@ li{
     --webkit-filter: none;
 }
 
+/* Langagues */
+
+#languages{
+    background: var(--my-default-theme-color-revert)
+}
+
+#languages .heading h2{
+    color:var(--my-default-theme-color);
+}
+
+#languages .progress{
+    height: 25%;
+    margin: 30px 20px;
+    background: #ddd;
+}
+
+
+#languages .progress-bar.good{
+    background: var(--my-level-good);
+}
+
+#languages .progress-bar.medium{
+    background: var(--my-level-medium);
+}
+
+#languages .progress-bar.low{
+    background: var(--my-level-low);
+}
+
+
+#languages .progress h5{
+    text-shadow: 1px 1px 1px black;
+}
 /* Recommendations */
 
 #recommendations{
@@ -415,6 +449,28 @@ li{
     font-style: italic;
 }
 
+/* Hobbies */
+
+#hobbies{
+    background: var(--my-default-theme-color);
+}
+
+#hobbies .heading h2{
+    color: var(--my-default-theme-color-revert);
+}
+
+#hobbies h5{
+    color: var(--my-default-theme-color-revert);
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    border: 1px solid var(--my-default-theme-color-revert);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 3px;
+}
+
 /* Footer */
 
 footer{
@@ -434,7 +490,7 @@ footer .glyphicon:hover{
 }
 
 footer h5{
-    color: white;
+    color: var(--my-default-theme-color-revert);
     text-transform: uppercase;
     
 }
