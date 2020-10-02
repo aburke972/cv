@@ -99,6 +99,7 @@ li{
     width: 120px;
     border-radius:50%;
 }
+
 .profile-picture{
     text-align: center;
     margin: 0 auto;
@@ -127,6 +128,7 @@ li{
     transition: all 0.3s ease-in 0s;
     display: inline-block;
 }
+
 .button1:hover{
     background:var(--my-default-theme-color-revert);
     color:#348795;
@@ -470,6 +472,10 @@ li{
     text-align: center;
     border-radius: 3px;
 }
+
+/* #hobbies .hobby-emphasis h5{
+    border-color: greenyellow;
+} */
 
 /* Footer */
 

@@ -1,0 +1,9 @@
+#about:hover, #background:hover, #hobbies:hover, #portfolio:hover{
+    background-color: #a8998a;
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+#about, #background, #hobbies, #portfolio{
+    transition-duration: 2s;
+}
